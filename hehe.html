@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>hehe</title>
+    <style>
+        html {
+            width: 100%;
+            height: 100%;
+        }
+        .mytext {
+            text-align: center;
+            font-family: courier new;
+            font-size: 18px;
+        }
+        .hehe {
+            text-align: center;
+            font-family: brush script mt;
+            font-size: 23px;
+        }
+        .image-container {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .image-side {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .surprise-btn {
+            background-color: #ff69b4;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+        .hidden {
+            display: none;
+        }
+        .big-valentines {
+            font-family: brush script mt;
+            font-size: 48px;
+            color: #1d2533;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .video-container {
+            text-align: center;
+            margin: 30px auto;
+            max-width: 560px;
+        }
+    </style>
+</head>
+<body bgcolor="#4287f5">
+    <div class="image-container">
+        <div class="image-side">
+            <!-- Left side images -->
+            <img src="https://imgur.com/gFVG3li">
+            <img src="https://imgur.com/AMIeyvd">
+            <img src="https://imgur.com/Cxu41cQ">
+        </div>
+        
+        <div id="text-content">
+            <p class="mytext"><br><br><br>hellooo 
+            <span class="hehe">francheska mikaila trinidad padilla :))</span></p>
+            <p class="mytext"> hehe <span class="hehe">Happy Valentines Day!</span></p>
+            
+            <p class="mytext"> I don't really have much to say, but I do want to<br>
+            tell you that I'm thankful for having you by my side,<br>
+            like how I feel that you're like a gift I've<br>
+            put aside for a long time and I'm now opening to<br>
+            see its contents.<br>
+            This day comes another new milestone for us<br>
+            and I want to express my feelings for you with<br>
+            this simple thing of my own I made ^^<br>
+            You're really nice, caring, thoughtful,<br>
+            committed, diligent, patient, understanding,<br>
+            generous, smart, hardworking, and <br>
+            all the things I could wish for.<br>
+            Even with your personality, you still<br>
+            have the extra on your looks :)) hehe<br>
+            I really like you and here's an extra to my<br>
+            surprise :)<br>
+<span style=font-size:10px>(click "Surprise me")</style>
+</p>
+	    
+
+            <p style="text-align: center;">
+                <button class="surprise-btn" onclick="showSurprise()">Surprise me</button>
+            </p>
+        </div>
+
+        <div class="image-side">
+            <!-- Right side images -->
+            <img src="https://imgur.com/Kd5UnDH">
+            <img src="https://imgur.com/H7EmUqo">
+            <img src="https://imgur.com/rBonbNW">
+        </div>
+    </div>
+
+    <div id="surprise" class="hidden">
+        <p class="big-valentines">Happy Valentine's Day :))</p>
+        <div class="video-container">
+            <!-- Video placeholder - replace with your YouTube embed -->
+            <img src="https://youtu.be/H3UpG8nd0VQ" alt="hehe">
+        </div>
+    </div>
+
+    <script>
+        function showSurprise() {
+            document.getElementById('text-content').style.display = 'none';
+            document.getElementById('surprise').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
